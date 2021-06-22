@@ -1,0 +1,22 @@
+// css helper file
+
+// note - main difference between Function vs Mixins is
+// Function actually returns something/value with return keyword
+// A Mixin is basically a Set of Styles that we want to include 
+
+// Set Text Color
+@function set-text-color($color) {
+  @if(lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+// mixins with Transform
+@mixin transform($property) {
+  // to transform an element in two-dimensional (2D) or three-dimensional (3D)
+  --webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
