@@ -16,7 +16,5 @@
 // mixins with Transform
 @mixin transform($property) {
   // to transform an element in two-dimensional (2D) or three-dimensional (3D)
-  --webkit-transform: $property;
-  -ms-transform: $property;
   transform: $property;
 }
