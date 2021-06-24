@@ -97,7 +97,7 @@ p {
   &:hover {
     // adding our mixins
     @include transform(rotate(20deg));
-    // darken(color, ratio) - predefined func
+    // darken(color, ratio) - predefined sass func
     background-color: darken($light-color, 10%)
   }
 }
@@ -110,6 +110,7 @@ p {
   &:hover {
     // adding our mixins
     @include transform(rotate(-20deg));
+    // lighten(color, ratio) - predefined sass func
     background-color: lighten($dark-color, 10%);
   }
 }
